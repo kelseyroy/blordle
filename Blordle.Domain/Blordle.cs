@@ -3,8 +3,8 @@ public class Game
 {
     private string SecretWord;
     Guess Guess = new Guess();
-    private static string relativePath = "../../../../Wordle.Domain/Data/5_letter_words.txt";
     private static string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
+    private static string relativePath = "../../../Blordle.Domain/Data/5_letter_words.txt";
     private static string filePath = Path.GetFullPath(Path.Combine(currentDirectory, relativePath));
     Answer Answer = new Answer();
     public Game(string? word)
